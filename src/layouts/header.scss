@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.Link {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34.22px;
+    text-align: right;
+    margin-left: 57px;
+    color: #000000;
+    text-decoration: none;
+    &.active {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 2px;
+    }
+}

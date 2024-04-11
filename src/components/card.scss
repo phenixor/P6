@@ -1,0 +1,58 @@
+.CardPlacement {    
+    display: flex;
+    width: 1240px;
+    background: #F6F6F6;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: unset;
+    border-radius: 10px;
+}
+
+.LocationCard {
+    display: flex;
+    width: 340px;
+    height: 340px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 10px;
+    position: relative;
+
+    &__Image {
+        border-radius: 10px;  
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    };
+
+    &__Dégradé {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.205) 99.99%, rgba(0, 0, 0, 0.5) 100%);
+        z-index: 1;
+        border-radius: 10px;  
+    };
+
+    &__Title {
+        width: 90%;
+        margin: 20px;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 25.67px;
+        text-align: left;
+        text-decoration: none;
+        color: white;
+        position: absolute;
+        bottom: 0px;
+        z-index: 2;
+    }
+}

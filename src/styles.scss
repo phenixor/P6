@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#root {
+    align-self: center;
+    width: 80%;
+}
+
+// Import des styles des composants
+@import 'components/dropdown.scss';
+@import 'components/card.scss';
+// Ajoutez d'autres imports de composants selon votre besoin
+
+// Import des styles des mises en page
+@import 'layouts/header.scss';
+@import 'layouts/footer.scss';
+// Ajoutez d'autres imports de mises en page selon votre besoin
+
+// Import des styles des pages
+@import 'pages/home.scss';
+@import 'pages/about.scss';
+@import 'pages/property.scss';
+// Ajoutez d'autres imports de pages selon votre besoin
+
+
