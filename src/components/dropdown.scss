@@ -1,0 +1,50 @@
+.dropbtn {
+    display: flex;
+    width: 100%;
+    height: 52px;
+    padding: 10px 20px 10px 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: #FF6060;
+    align-items: center;
+    justify-content: space-between;
+    border: 0px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.67px;
+    text-align: left;
+}
+
+.dropdown-content {
+    opacity: 0%;
+    padding: 10px;
+    margin: 0px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 5s;
+    transition: opacity 0s;
+    border-radius: 0px 0px 10px 10px;
+    background-color: rgba(246, 246, 246, 0.45);
+
+    p {
+        margin: 0px;
+    }
+}
+
+.show {
+    max-height: 100%;
+    opacity: 100%;
+}
+  
+.arrow {
+    transition: transform 0.5s ease-out;
+}
+
+.rotate {
+    transform: rotate(-180deg);
+    &.reverse {
+        transform: rotate(0deg);
+    }
+}
+  

@@ -15,14 +15,14 @@ function SlideShow({ pictures }) {
         <div className="slider">
             {pictures.length > 1 && (
                 <>
-                    <button onClick={prevSlide} className="prev">&#10094;</button>
-                    <button onClick={nextSlide} className="next">&#10095;</button>
+                    <button onClick={prevSlide} className="changer changer__prev">&#10094;</button>
+                    <button onClick={nextSlide} className="changer changer__next">&#10095;</button>
                 </>
             )}
             <div className="slides">
                 {pictures.map((picture, index) => (
                     <div key={index} className={index === currentSlide ? 'slide active' : 'slide'}>
-                        <img src={picture} alt={`Image ${index + 1}`} />
+                        <img className='slide__image' src={picture} alt={`Image ${index + 1}`} />
                     </div>
                 ))}
             </div>

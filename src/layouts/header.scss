@@ -1,8 +1,16 @@
+.HeaderDiv {
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
+    margin-bottom: 50px;
+    width: 1240px;
+    align-self: center;
 }
 
 .Link {

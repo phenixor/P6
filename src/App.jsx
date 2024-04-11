@@ -1,7 +1,7 @@
 import React from 'react';
 import { RouterProvider, createBrowserRouter, Navigate } from 'react-router-dom';
-import Single from './pages/Property.jsx';
-import LinkProperty from './components/PropertyLink.jsx';
+import Property from './pages/Property.jsx';
+import LinkProperty from './components/LinkProperty.jsx';
 import Root from './pages/Home.jsx';
 import About from './pages/About.jsx';
 
@@ -16,7 +16,7 @@ const routes = [
             },
             {
                 path: '/property/:id',
-                element: <Single />,
+                element: <Property />,
             },
             {
                 path: '/about',

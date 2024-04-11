@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import DropArrow from '../assets/DropArrow.svg';
 
 function Dropdown({ itemsGetter, title }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,17 +12,15 @@ function Dropdown({ itemsGetter, title }) {
   return (
     <div className="dropdown">
       <button className="dropbtn" onClick={toggleDropdown}>
-        {title} &#9660;
+        {title} <img src={DropArrow} className={`arrow ${isOpen ? 'rotate' : ''}`} alt="Drop Arrow" />
       </button>
-      {isOpen && (
-        <div className="dropdown-content">
-          {items && items.length > 0 ? (
-            items.map((item, index) => <p key={index}>{item}</p>)
-          ) : (
-            <p>Aucun contenu disponible</p>
-          )}
-        </div>
-      )}
+      <div className={`dropdown-content ${isOpen ? 'show' : ''}`}>
+        {items && items.length > 0 ? (
+          items.map((item, index) => <p key={index}>{item}</p>)
+        ) : (
+          <p>Aucun contenu disponible</p>
+        )}
+      </div>
     </div>
   );
 }

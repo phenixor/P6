@@ -1,27 +1,35 @@
 body {
     display: flex;
     justify-content: center;
+    width: 100%;
+    margin: 0%;
 }
 
 #root {
     align-self: center;
-    width: 80%;
+    width: 100%;
 }
 
 // Import des styles des composants
+@import 'components/paysageComponent.scss';
+@import 'components/ratingstars.scss';
 @import 'components/dropdown.scss';
 @import 'components/card.scss';
-// Ajoutez d'autres imports de composants selon votre besoin
+@import 'components/slideshow.scss';
+@import 'components/localisation.scss';
+@import 'components/owner.scss';
+@import 'components/tags.scss';
+// Ajoutez d'autres imports de composants selon besoin
 
 // Import des styles des mises en page
 @import 'layouts/header.scss';
 @import 'layouts/footer.scss';
-// Ajoutez d'autres imports de mises en page selon votre besoin
+// Ajoutez d'autres imports de mises en page selon besoin
 
 // Import des styles des pages
 @import 'pages/home.scss';
 @import 'pages/about.scss';
 @import 'pages/property.scss';
-// Ajoutez d'autres imports de pages selon votre besoin
+// Ajoutez d'autres imports de pages selon besoin
 
 

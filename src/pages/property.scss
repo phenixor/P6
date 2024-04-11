@@ -1,0 +1,27 @@
+.PropertyContent {
+    width: 1240px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    &__Title {
+        font-family: Montserrat;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 51.34px;
+        text-align: left;
+        color: #FF6060;
+        margin: 0%;
+    }
+}
+
+.Align {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ContainDrop {
+    width: 45%;
+}

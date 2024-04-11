@@ -5,23 +5,29 @@ import LOGO from "../assets/LOGO.svg";
 function Root() {
     return (
         <div>
-            <header>
-                <div>
-                    <img className='LOGO' src={LOGO} alt="LOGO SVG" />
-                </div>
-                <nav>
-                    <NavLink className="Link" to="/">Acceuil</NavLink> 
-                    <NavLink className="Link" to="/about">A Propos</NavLink>
-                </nav>
-            </header>
+            <div className='HeaderDiv'>
+                <header>
+                    <div>
+                        <img className='LOGO' src={LOGO} alt="LOGO SVG" />
+                    </div>
+                    <nav>
+                        <NavLink className="Link" to="/">Accueil</NavLink> 
+                        <NavLink className="Link" to="/about">À Propos</NavLink>
+                    </nav>
+                </header>
+            </div>
             <div>
                 <Outlet />
             </div>
-            <footer>
-                <p>© 2020 Kasa. All rights reserved</p>
-            </footer>
+            <div className="FooterDiv">
+                <footer>
+                    <img className='LOGO__Footer' src={LOGO} alt="LOGO SVG" />
+                    <p>© 2020 Kasa. All rights reserved</p>
+                </footer>
+            </div>
         </div>
     );
 }
+
 
 export default Root;

@@ -7,7 +7,7 @@ import RatingStars from '../components/RatingStars.jsx';
 import Dropdown from '../components/Dropdown.jsx';
 import BackendInfo from '../components/BackendInfo.jsx';
 
-function Single() {
+function Property() {
 
     const backendData = BackendInfo();
 
@@ -30,19 +30,29 @@ function Single() {
     }
 
     return (
-        <div>
+        <div className='PropertyContent'>
             <SlideShow pictures={logement.pictures} />
-            <h2>{logement.title}</h2>
-            <Localisation location={logement.location} />
-            <Owner host={logement.host} />
-            <Tags tags={logement.tags} />
-            <RatingStars rating={logement.rating} />
-            <div>
-                <Dropdown itemsGetter={() => logement?.description ? [logement.description] : []} title="Description" />
-                <Dropdown itemsGetter={() => logement?.equipments || []} title="Équipement" />
+            <div className='Align'>
+                <div>
+                    <h2 className='PropertyContent__Title'>{logement.title}</h2>
+                    <Localisation location={logement.location} />
+                </div>
+                <Owner host={logement.host} />
+            </div>
+            <div className='Align'>
+                <Tags tags={logement.tags} />
+                <RatingStars rating={logement.rating} />
+            </div>
+            <div className='Align'>
+                <div className='ContainDrop'>
+                    <Dropdown itemsGetter={() => logement?.description ? [logement.description] : []} title="Description" />
+                </div>
+                <div className='ContainDrop'>
+                    <Dropdown itemsGetter={() => logement?.equipments || []} title="Équipement" />
+                </div>
             </div>
         </div>
     );
 }
 
-export default Single;
+export default Property;

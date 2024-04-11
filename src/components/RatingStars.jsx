@@ -1,13 +1,15 @@
 import React from 'react';
+import starA from '../assets/étoile pleine.svg';
+import starB from '../assets/étoile vide.svg';
 
 function RatingStars({ rating }) {
     const renderStars = () => {
         const stars = [];
         for (let i = 1; i <= 5; i++) {
             if (i <= rating) {
-                stars.push(<i key={i} className="fas fa-star"></i>);
+                stars.push(<img key={i} src={starA} className="star"></img>);
             } else {
-                stars.push(<i key={i} className="far fa-star"></i>);
+                stars.push(<img key={i} src={starB} className="star"></img>);
             }
         }
         return stars;
