@@ -1,0 +1,16 @@
+.Centering {
+    width: 1240px;
+    margin: auto;
+}
+
+.About {
+    &__Dropdown {
+        width: 80%;
+        margin: auto;
+        margin-top: 38px;
+        margin-bottom: 8px;
+        &--spacing {
+            margin-bottom: 30px;
+        }
+    }
+}

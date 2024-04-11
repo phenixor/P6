@@ -1,6 +1,7 @@
 import React from "react";
-import Paysage from "../assets/Paysage.png";
+import Paysage from "../assets/falaise.png";
 import Dropdown from "../components/Dropdown";
+import PaysageComponent from "../components/PaysageComponent";
 
 
 function About() {
@@ -10,12 +11,23 @@ function About() {
     const securiteText = "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond auc critères de sécurité établis par nos services. En laissant une note aussi bien à l'hote qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domeestique pour nos hôtes.";
     
     return (
-        <div>
-            <img src={Paysage} alt="Paysage" />
-            <Dropdown itemsGetter={() => [fiabiliteText]} title="Fiabilité" />
-            <Dropdown itemsGetter={() => [respectText]} title="Respect" />
-            <Dropdown itemsGetter={() => [serviceText]} title="Service" />
-            <Dropdown itemsGetter={() => [securiteText]} title="Sécurité" />
+        <div className="Centering">
+            <PaysageComponent imageUrl={Paysage} title={""}/>
+            <div className="About__Dropdown">
+                <div className="About__Dropdown--spacing">
+                    <Dropdown itemsGetter={() => [fiabiliteText]} title="Fiabilité" />
+                </div>
+                <div className="About__Dropdown--spacing">
+                    <Dropdown itemsGetter={() => [respectText]} title="Respect" />
+                </div>
+                <div className="About__Dropdown--spacing">
+                    <Dropdown itemsGetter={() => [serviceText]} title="Service" />
+                </div>
+                <div className="About__Dropdown--spacing">
+                    <Dropdown itemsGetter={() => [securiteText]} title="Sécurité" />
+                </div>
+            </div>
+            
         </div>
     );
 };

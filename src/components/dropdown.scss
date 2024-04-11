@@ -18,7 +18,6 @@
 
 .dropdown-content {
     opacity: 0%;
-    padding: 10px;
     margin: 0px;
     max-height: 0;
     overflow: hidden;
@@ -28,6 +27,7 @@
     background-color: rgba(246, 246, 246, 0.45);
 
     p {
+        padding: 10px;
         margin: 0px;
     }
 }

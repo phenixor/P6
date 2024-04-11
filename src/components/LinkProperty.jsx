@@ -18,7 +18,6 @@ function LinkProperty() {
                 {backendData.map(location => (
                     <li className='LocationCard' key={location.id}>
                         <div className='LocationCard__Dégradé'></div>
-                        {/* Wrap the image and title in a Link */}
                         <Link to={`/property/${location.id}`}>
                             <img className='LocationCard__Image' src={location.cover} alt={location.title} />
                             <h3 className='LocationCard__Title'>{location.title}</h3>
