@@ -4,6 +4,7 @@ import Property from './pages/Property.jsx';
 import LinkProperty from './components/LinkProperty.jsx';
 import Root from './pages/Home.jsx';
 import About from './pages/About.jsx';
+import E404 from './pages/404.jsx';
 
 const routes = [
     {
@@ -21,12 +22,16 @@ const routes = [
             {
                 path: '/about',
                 element: <About />,
-            }
-        ]
+            },
+            {
+                path: '/e404',
+                element: <E404 />,
+            },
+        ],
     },
     {
         path: '*',
-        element: <Navigate to="/" />
+        element: <Navigate to="/e404" />
     }
 ];
 

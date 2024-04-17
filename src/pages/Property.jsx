@@ -6,15 +6,16 @@ import Localisation from '../components/Localisation.jsx';
 import RatingStars from '../components/RatingStars.jsx';
 import Dropdown from '../components/Dropdown.jsx';
 import BackendInfo from '../components/BackendInfo.jsx';
+import E404 from './404.jsx';
 
 function Property() {
 
     const backendData = BackendInfo();
-
+    
     const id = window.location.pathname.split('/').pop();
     
     if (!id) {
-        return <div>Aucun ID de logement spécifié</div>;
+        return <E404/>;
     }
 
     if (!backendData) {
@@ -26,7 +27,7 @@ function Property() {
     const logement = backendData.find(logement => logement.id === idString);
 
     if (!logement) {
-        return <div>logement inexistente</div>;
+        return <E404/>;
     }
 
     return (

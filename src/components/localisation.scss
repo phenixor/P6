@@ -5,6 +5,10 @@
     font-weight: 500;
     line-height: 25.67px;
     text-align: left;
+    @media screen and (max-width: 425px) {
+        font-size: 14px;
+        line-height: 20px;
+    };
     
 }
 

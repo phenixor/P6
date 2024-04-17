@@ -1,8 +1,12 @@
 .PropertyContent {
-    width: 1240px;
+    width: 86%;
     display: flex;
     flex-direction: column;
     margin: auto;
+    margin-bottom: 0px;
+    @media screen and (max-width: 425px) {
+        width: 90%;
+    };
 
     &__Title {
         font-family: Montserrat;
@@ -12,6 +16,11 @@
         text-align: left;
         color: #FF6060;
         margin: 0%;
+        @media screen and (max-width: 425px) {
+            font-size: 18px;
+            line-height: 25px;
+        };
+    
     }
 }
 
@@ -20,9 +29,19 @@
     justify-content: space-between;
     margin-top: 10px;
     margin-bottom: 10px;
+    @media screen and (max-width: 425px) {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    };
 }
 
 .ContainDrop {
     width: 45%;
     margin-bottom: 30px;
+    @media screen and (max-width: 425px) {
+        width: 100%;
+        margin-bottom: 20px;
+    };
 }

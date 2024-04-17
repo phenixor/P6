@@ -26,6 +26,9 @@ function SlideShow({ pictures }) {
                     </div>
                 ))}
             </div>
+            <div className="slide-counter">
+                {currentSlide + 1} / {pictures.length}
+            </div>
         </div>
     );
 }

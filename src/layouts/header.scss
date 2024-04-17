@@ -9,9 +9,23 @@ header {
     align-items: flex-end;
     justify-content: space-between;
     margin-bottom: 50px;
-    width: 1240px;
+    width: 90%;
     align-self: center;
     margin-top: 45px;
+    align-items: center;
+    @media screen and (max-width: 425px) {
+        margin-bottom: 27px;
+        margin-top: 20px;
+    }
+}
+
+
+.LOGO {
+    width: 210px;
+    
+    @media screen and (max-width: 425px) {
+        width: 145px;
+    }
 }
 
 .Link {
@@ -23,6 +37,15 @@ header {
     margin-left: 57px;
     color: #000000;
     text-decoration: none;
+    @media screen and (max-width: 425px) {
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 17.11px;
+        text-transform: uppercase;
+        margin-left: 26px;
+    }
+
     &.active {
         text-decoration: underline;
         text-decoration-thickness: 1px;

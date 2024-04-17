@@ -1,5 +1,12 @@
 .star {
     margin-left: 10px;
+    @media screen and (max-width: 425px) {
+        margin-right: 8px;
+        margin-left: 0px;
+        margin-top: 27px;
+        margin-bottom: 17px;
+        width: 13px;
+    };
 }
 
 .rating-stars {

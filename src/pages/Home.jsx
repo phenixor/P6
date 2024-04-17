@@ -4,20 +4,22 @@ import LOGO from "../assets/LOGO.svg";
 
 function Root() {
     return (
-        <div>
-            <div className='HeaderDiv'>
-                <header>
-                    <div>
-                        <img className='LOGO' src={LOGO} alt="LOGO SVG" />
-                    </div>
-                    <nav>
-                        <NavLink className="Link" to="/">Accueil</NavLink> 
-                        <NavLink className="Link" to="/about">À Propos</NavLink>
-                    </nav>
-                </header>
-            </div>
-            <div>
-                <Outlet />
+        <div className='MainDiv'>
+            <div className='Sizing'>
+                <div className='HeaderDiv'>
+                    <header>
+                        <div>
+                            <img className='LOGO' src={LOGO} alt="LOGO SVG" />
+                        </div>
+                        <nav>
+                            <NavLink className="Link" to="/">Accueil</NavLink> 
+                            <NavLink className="Link" to="/about">À Propos</NavLink>
+                        </nav>
+                    </header>
+                </div>
+                <div>
+                    <Outlet />
+                </div>
             </div>
             <div className="FooterDiv">
                 <footer>

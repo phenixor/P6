@@ -4,6 +4,14 @@
     align-items: center;
 }
 
-.LOGO {
-    width: 210px;
+.Sizing {
+    max-width: 1440px;
+    margin: auto;
+    flex: 1;
+}
+
+.MainDiv {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }

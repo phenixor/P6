@@ -1,9 +1,13 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
     margin: 0%;
     font-family: Montserrat;
+    margin: auto;
+    min-height: 100%;
+    justify-content: space-between;
 }
 
 #root {
@@ -31,6 +35,7 @@ body {
 @import 'pages/home.scss';
 @import 'pages/about.scss';
 @import 'pages/property.scss';
+@import 'pages/404.scss';
 // Ajoutez d'autres imports de pages selon besoin
 
 
