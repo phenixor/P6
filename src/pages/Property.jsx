@@ -41,7 +41,7 @@ function Property() {
                     <h2 className='PropertyContent__Title'>{logement.title}</h2>
                     <Localisation location={logement.location} />
                 </div>
-                {screenWidth >= 425 ?(
+                {screenWidth > 425 ?(
                     <Owner host={logement.host} />
                 ) : null}
             </div>
@@ -49,7 +49,7 @@ function Property() {
                 <Tags tags={logement.tags} />
                 <div className='MobileAlign'>
                     <RatingStars rating={logement.rating} />
-                    {screenWidth < 425 ?(
+                    {screenWidth <= 425 ?(
                         <Owner host={logement.host} />
                     ) : null}
                 </div>
