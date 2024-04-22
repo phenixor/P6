@@ -13,7 +13,7 @@ function LinkProperty() {
 
     return (
         <div className='Homepage'>
-            <PaysageComponent imageUrl={Paysage} title="Chez vous, partout et ailleurs" />
+            <PaysageComponent imageUrl={Paysage} title="Chez vous, partout et ailleurs" extraClass={"darken60"}/>
             <ul className='CardPlacement'>
                 {backendData.map(location => (
                     <li className='LocationCard' key={location.id}>

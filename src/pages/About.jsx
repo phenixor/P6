@@ -12,7 +12,7 @@ function About() {
     
     return (
         <div className="Centering">
-            <PaysageComponent imageUrl={Paysage} title={""}/>
+            <PaysageComponent imageUrl={Paysage} title={""} extraClass={"darken30"}/>
             <div className="About__Dropdown">
                 <div className="About__Dropdown--spacing">
                     <Dropdown itemsGetter={() => [fiabiliteText]} title="Fiabilité" />

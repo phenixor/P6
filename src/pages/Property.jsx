@@ -29,6 +29,8 @@ function Property() {
     if (!logement) {
         return <E404/>;
     }
+    
+    const screenWidth = window.innerWidth;
 
     return (
         <div className='PropertyContent'>
@@ -38,11 +40,18 @@ function Property() {
                     <h2 className='PropertyContent__Title'>{logement.title}</h2>
                     <Localisation location={logement.location} />
                 </div>
-                <Owner host={logement.host} />
+                {screenWidth >= 425 ?(
+                    <Owner host={logement.host} />
+                ) : null}
             </div>
             <div className='Align'>
                 <Tags tags={logement.tags} />
-                <RatingStars rating={logement.rating} />
+                <div className='MobileAlign'>
+                    <RatingStars rating={logement.rating} />
+                    {screenWidth < 425 ?(
+                        <Owner host={logement.host} />
+                    ) : null}
+                </div>
             </div>
             <div className='Align'>
                 <div className='ContainDrop'>

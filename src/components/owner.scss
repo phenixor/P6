@@ -1,12 +1,6 @@
 .Owner {
     display: flex;
     justify-content: flex-end;
-    @media screen and (max-width: 425px) {
-        position: absolute;
-        right: 0px;
-        margin-top: 105px;
-        margin-right: 5%;
-    };
     &__Name {
         font-family: Montserrat;
         display: flex;
@@ -23,6 +17,7 @@
         @media screen and (max-width: 425px) {
             font-size: 12px;
             line-height: 17px;
+            margin-bottom: unset;
         };
     };
     &__Picture {

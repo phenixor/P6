@@ -37,6 +37,15 @@
     };
 }
 
+.MobileAlign {
+    @media screen and (max-width: 425px) {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
 .ContainDrop {
     width: 45%;
     margin-bottom: 30px;

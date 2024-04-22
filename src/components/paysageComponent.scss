@@ -9,7 +9,6 @@
     object-fit: cover;
     height: 200px;
     border-radius: 20px;
-    filter: brightness(40%);
     margin: auto;
 
     @media screen and (max-width: 425px) {
@@ -17,6 +16,14 @@
         height: 111px;
         border-radius: 10px;
     }
+}
+
+.darken60 {
+    filter: brightness(40%);
+}
+
+.darken30 {
+    filter: brightness(70%);
 }
 
 .PaysageTitle {
