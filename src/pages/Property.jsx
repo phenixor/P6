@@ -7,6 +7,7 @@ import RatingStars from '../components/RatingStars.jsx';
 import Dropdown from '../components/Dropdown.jsx';
 import BackendInfo from '../components/BackendInfo.jsx';
 import E404 from './404.jsx';
+import React from 'react';
 
 function Property() {
 
