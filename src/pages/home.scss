@@ -6,8 +6,12 @@
 
 .Sizing {
     max-width: 1440px;
+    min-width: 1440px;
     margin: auto;
     flex: 1;
+    @media screen and (max-width:425px) {
+        min-width: unset;
+    }
 }
 
 .MainDiv {

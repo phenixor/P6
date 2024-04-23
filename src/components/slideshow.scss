@@ -64,7 +64,8 @@
   }
 
 .slide-counter {
-    position: relative;
+    position: absolute;
+    left: 50%;
     bottom: 50px;
     color: white;
     font-family: Montserrat;

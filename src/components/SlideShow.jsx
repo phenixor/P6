@@ -17,6 +17,9 @@ function SlideShow({ pictures }) {
                 <>
                     <button onClick={prevSlide} className="changer changer__prev">&#10094;</button>
                     <button onClick={nextSlide} className="changer changer__next">&#10095;</button>
+                    <div className="slide-counter">
+                        {currentSlide + 1} / {pictures.length}
+                    </div>
                 </>
             )}
             <div className="slides">
@@ -25,9 +28,6 @@ function SlideShow({ pictures }) {
                         <img className='slide__image' src={picture} alt={`Image ${index + 1}`} />
                     </div>
                 ))}
-            </div>
-            <div className="slide-counter">
-                {currentSlide + 1} / {pictures.length}
             </div>
         </div>
     );
